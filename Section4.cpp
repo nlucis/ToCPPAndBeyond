@@ -1,3 +1,2 @@
 #pragma once
-
-int number = 36;
+int faveNum = 36;
