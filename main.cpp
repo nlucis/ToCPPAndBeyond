@@ -14,6 +14,12 @@ int main() {
 	int num;
 	cout << "What's kickin' Sky Chicken? Enter your favorite number...:";
 	cin >> num;
+
+	if (num == 0) {
+		cerr << "Whoa now, edgelord.";
+		return 1;
+	}
+
 	if (num != faveNum) {
 		cout << "Oh cool! " << num << " is a good one. My favorite number is " << faveNum << "."  << endl;
 	}
