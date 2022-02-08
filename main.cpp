@@ -1,3 +1,4 @@
+#include <climits>
 #include <iostream>
 
 // Qualified namespace
@@ -7,7 +8,7 @@ using std::cin;
 // Global namespace
 using namespace std;
 
-// Gets int number variable from Section4.cpp
+// Gets int number variable from Section4.cpp (global scoped)
 extern int faveNum;
 
 int main() {
@@ -26,6 +27,12 @@ int main() {
 	else {
 		cout << "No way! That's my favorite number too! Seriously! " << faveNum << " is my favorite number!" << endl;
 	}
+
+	string div{ "\n************************************\n" };
+
+	extern char mNitial;
+	cout << div << "The letter of the day is: " << mNitial << div;
+
 	return 0;
 }
 
