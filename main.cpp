@@ -8,30 +8,24 @@ using std::cin;
 // Global namespace
 using namespace std;
 
-// Gets int number variable from Section4.cpp (global scoped)
-extern int faveNum;
+/*
+	Methods for outputting a statement
+	about each primitive type from an external variable.
+*/
+string divider{ "\n************************************\n" };
+void charStatement(string intro, char value) {
+	string statement{ divider + intro + " " + value + divider };
+	cout << statement << endl;
+}
+void stringStatement(string intro, string value) {
+	string statement{};
+	cout << statement << endl;
+}
 
 int main() {
-	int num;
-	cout << "What's kickin' Sky Chicken? Enter your favorite number...:";
-	cin >> num;
-
-	if (num == 0) {
-		cerr << "Whoa now, edgelord.";
-		return 1;
-	}
-
-	if (num != faveNum) {
-		cout << "Oh cool! " << num << " is a good one. My favorite number is " << faveNum << "."  << endl;
-	}
-	else {
-		cout << "No way! That's my favorite number too! Seriously! " << faveNum << " is my favorite number!" << endl;
-	}
-
-	string div{ "\n************************************\n" };
 
 	extern char mNitial;
-	cout << div << "The letter of the day is: " << mNitial << div;
+	charStatement("The letter of the day is: ", mNitial);
 
 	return 0;
 }

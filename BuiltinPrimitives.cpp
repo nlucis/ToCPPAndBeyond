@@ -1,3 +1,5 @@
 #include <climits>
+#include <string>
+using namespace std;
 
-char mNitial{ 'J' };
+char mNitial { 'J' };
